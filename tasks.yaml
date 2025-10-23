@@ -1,0 +1,28 @@
+fundamentals_task:
+  description: >
+    Fetch the latest SEC filing (10-K or 10-Q) for {ticker} and summarize
+    key metrics such as revenue, net income, cash, debt, and business segments.
+    Do not re-query or repeat.
+  expected_output: >
+    A short summary paragraph listing the financial metrics with the filing link.
+
+price_task:
+  description: >
+    Retrieve and summarize the current stock data for a given ticker symbol using Yahoo Finance.
+    Include key metrics such as current price, market cap, P/E ratio, dividend yield, and a short
+    business description. Present the information in a concise, markdown-formatted summary.
+  expected_output: >
+    A formatted summary of the company's stock and business data, including key financial metrics
+    and performance indicators, suitable for investors or analysts.
+
+news_task:
+  description: >
+    Find the 5 most relevant articles related to {ticker} as of 2025 and extract key insights and sentiment.
+  expected_output: >
+    Five bullet points summarizing major news insights and sentiment related to {ticker}.
+
+analyst_task:
+  description: >
+    Write a three-sentence summary and provide a clear recommendation on whether {ticker} is a buy, sell, or hold based on data from the fundamentals, price, and news agents.
+  expected_output: >
+    A concise summary with a final buy/sell/hold decision for {ticker}.
